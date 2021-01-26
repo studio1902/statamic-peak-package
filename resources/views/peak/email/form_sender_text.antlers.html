@@ -1,0 +1,22 @@
+{{# This is the text email that goes to the sender of the contact form. #}}
+{{ trans:strings.form_mail_greeting }} {{ first_name or name }},
+
+{{ trans:strings.form_mail_body_sender }}
+
+{{ trans:strings.form_mail_closing }},
+{{ trans:strings.form_mail_from }}
+
+-
+{{ fields }}
+{{ trans key="{display}" locale="{locale}" }}:
+{{ if (value | is_array) }}
+{{ value }}
+{{ value }}
+{{ /value }}
+{{ else }}
+{{ value }}
+{{ /if }}
+{{ /fields }}
+-
+{{ trans:strings.form_mail_submitted }} {{ now | timezone | format:r }}
+{{ trans:strings.form_mail_from }}

@@ -1,0 +1,57 @@
+{
+    "name": "studio1902/statamic-peak-package",
+    "description": "Statamic Peak Starter Kit Package",
+    "type": "statamic-addon",
+    "authors": [
+        {
+            "name" : "Studio1902",
+            "email" : "info@studio1902.nl"
+        },
+        {
+            "name": "Job Verplanke",
+            "email": "job@verplanke.dev"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^8.0",
+        "illuminate/console": "^8.0",
+        "ext-json" : "*"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^4.4",
+        "psalm/plugin-laravel": "^1.4",
+        "friendsofphp/php-cs-fixer": "^2.18"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Studio1902\\Peak\\": "src"
+        }
+    },
+    "autoload-dev" : {
+        "psr-4" : {
+            "Studio1902\\Peak\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm --show-info=false --stats",
+        "format": "vendor/bin/php-cs-fixer fix",
+        "dry-format": "vendor/bin/php-cs-fixer fix -v --show-progress=none --dry-run"
+    },
+    "config" : {
+        "sort-packages": true
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Peak Starter Kit",
+            "description": "A Starter Kit for Statamic CMS"
+        },
+        "laravel": {
+            "providers": [
+                "Sutdio1902\\Peak\\PeakServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability" : "dev",
+    "prefer-stable" : true
+}
