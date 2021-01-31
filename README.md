@@ -7,7 +7,7 @@
 
 ![Statamic 3.0+](https://img.shields.io/badge/Statamic-3.0+-FF269E?style=for-the-badge&link=https://statamic.com)
 
-With this package you can install [Statamic Peak](https://github.com/studio1902/statamic-peak) into your current Laravel project. This repo is work in progress by [Job Verplanke](https://github.com/jobverplanke).
+With this bèta package you can install [Statamic Peak](https://github.com/studio1902/statamic-peak) into your current Laravel project. This repo is work in progress by [Job Verplanke](https://github.com/jobverplanke).
 
 ## License
 <span id="license"></span>
