@@ -48,7 +48,7 @@
         },
         "laravel": {
             "providers": [
-                "Sutdio1902\\Peak\\PeakServiceProvider"
+                "Studio1902\\Peak\\PeakServiceProvider"
             ]
         }
     },
