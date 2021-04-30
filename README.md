@@ -9,6 +9,8 @@
 
 With this beta package you can install [Statamic Peak](https://github.com/studio1902/statamic-peak) into your current Laravel project. This repo is work in progress by [Job Verplanke](https://github.com/jobverplanke).
 
+**Important**: this package currently installs an _outdated_ version of Peak.
+
 1. `composer require studio1902/statamic-peak-package`.
 2. `php artisan peak:install`
 
